@@ -1,96 +1,25 @@
-<<<<<<< HEAD
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# backend4_project
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+PIN NOTES
+<img width="1241" height="1173" alt="image" src="https://github.com/user-attachments/assets/d6a73fc5-5d7b-4fec-82a3-8474a749332c" />
 
-## About Laravel
+UNPIN NOTES
+<img width="1233" height="1188" alt="image" src="https://github.com/user-attachments/assets/dfccaf7e-2f59-4c8a-b0ec-4f2a6bc3b871" />
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+PUBLISH NOTES 
+<img width="1241" height="1181" alt="image" src="https://github.com/user-attachments/assets/aa52b456-b86e-43e6-8cb4-9acc830a5582" />
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+ARCHIVE NOTES
+<img width="1238" height="1167" alt="image" src="https://github.com/user-attachments/assets/9966a71e-5134-4291-b0a4-c30cad5b2606" />
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+NEW ARCHIVE OLD NOTES
+<img width="1245" height="982" alt="image" src="https://github.com/user-attachments/assets/31737f48-954b-46ba-a47a-14bc882c2e12" />
 
-## Learning Laravel
+SEARCH 
+<img width="1246" height="977" alt="image" src="https://github.com/user-attachments/assets/f43ce5b1-8c9e-4a7c-9874-a111853c1451" />
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+NEW USER NOTES WITH CATEGORY
+<img width="1201" height="1365" alt="image" src="https://github.com/user-attachments/assets/7d7ab8eb-cf47-488e-90ba-63f7765c0233" />
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
-
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
-
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
-=======
-# backed3project
-Get 1.0 (Note)
-<img width="1266" height="1263" alt="image" src="https://github.com/user-attachments/assets/1b61bc21-574b-4560-aaa2-a05573bc6771" />
-
-Get 2.0 (Note)
-<img width="1231" height="1174" alt="image" src="https://github.com/user-attachments/assets/d35b1494-3b04-4fb6-8e09-f22eef7d0d8b" />
-
-Status(Note)
-<img width="1244" height="1208" alt="image" src="https://github.com/user-attachments/assets/14b8e879-3ddb-4ed8-8159-22428898be84" />
-
-UserNotesWithCategory(Note)
-<img width="1263" height="1379" alt="image" src="https://github.com/user-attachments/assets/f2bf7505-0783-4437-b242-1198e170e52a" />
-
-Search(Note)
-<img width="1264" height="1231" alt="image" src="https://github.com/user-attachments/assets/702223e7-a4e5-4634-ba59-778416215fcc" />
-
-Archive(Note)
-<img width="1239" height="890" alt="image" src="https://github.com/user-attachments/assets/ce29d317-b9f6-45a4-af89-43a114a82f71" />
-
-Delete(Note)
-<img width="1241" height="944" alt="image" src="https://github.com/user-attachments/assets/4996efb5-5c29-4e45-b08b-b4b4e41ad26a" />
-
-Post(Note)
-<img width="1250" height="894" alt="image" src="https://github.com/user-attachments/assets/35644660-ce34-4cb3-aaf0-866391bb16ec" />
-
-Put(Note)
-<img width="1239" height="1010" alt="image" src="https://github.com/user-attachments/assets/89bff8f2-fd26-4903-964a-1d49d490baad" />
-
-Pin (Note)
-<img width="1241" height="880" alt="image" src="https://github.com/user-attachments/assets/34eb2932-96d0-4e69-8ceb-585f85cb664a" />
-
-==============================================================
-
-Neviem, prečo nemôžem pridať fotky pre Categories. Skúšal som to, ale Git mi jednoducho nedovolí pridať fotky do ReadMe. Pošlem vam ich v Edu.
->>>>>>> 77bde6defa32ab96b7daebbeafa987f552f43f32
+NEW STATUS
+<img width="1228" height="945" alt="image" src="https://github.com/user-attachments/assets/1851e5f5-0596-40da-b9ee-f16aa345772f" />
