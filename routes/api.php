@@ -15,4 +15,8 @@ Route::get('users/{user}/notes', [NoteController::class, 'userNotesWithCategorie
 
 Route::get('notes-actions/search', [NoteController::class, 'search']);
 
-Route::patch('notes/{id}/pin', [NoteController::class, 'pinNote']);
+Route::post('/notes/{id}/pin', [NoteController::class, 'pinNote']);
+Route::post('/notes/{id}/unpin', [NoteController::class, 'unpinNote']);
+
+Route::post('/notes/{id}/publish', [NoteController::class, 'publish']);
+Route::post('/notes/{id}/archive', [NoteController::class, 'archive']);

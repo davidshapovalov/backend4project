@@ -6,33 +6,65 @@ use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use Illuminate\Support\Facades\DB;
 
+use App\Models\Category;
+
 class CategoryController extends Controller
 {
+//    public function index()
+//    {
+//        $categories = DB::table('categories')->get();
+//
+//        return response()->json(['categories' => $categories], Response::HTTP_OK);
+//    }
     public function index()
     {
-        $categories = DB::table('categories')->get();
-
+        $categories = Category::orderBy('name')->get();
         return response()->json(['categories' => $categories], Response::HTTP_OK);
     }
 
+
+//    public function store(Request $request)
+//    {
+//        $data = $request->validate([
+//            'name' => 'required|string|max:128',
+//        ]);
+//
+//        DB::table('categories')->insert([
+//            'name'       => $data['name'],
+//            'created_at' => now(),
+//            'updated_at' => now(),
+//        ]);
+//
+//        return response()->json(['message' => 'Category created'], Response::HTTP_CREATED);
+//    }
     public function store(Request $request)
     {
         $data = $request->validate([
             'name' => 'required|string|max:128',
+            'color' => 'nullable|string|max:16', // если есть поле color
         ]);
 
-        DB::table('categories')->insert([
-            'name'       => $data['name'],
-            'created_at' => now(),
-            'updated_at' => now(),
-        ]);
+        $category = Category::create($data);
 
-        return response()->json(['message' => 'Category created'], Response::HTTP_CREATED);
+        return response()->json([
+            'message' => 'Category created',
+            'category' => $category
+        ], Response::HTTP_CREATED);
     }
 
+//    public function show(string $id)
+//    {
+//        $category = DB::table('categories')->where('id', $id)->first();
+//
+//        if (!$category) {
+//            return response()->json(['message' => 'Category not found'], Response::HTTP_NOT_FOUND);
+//        }
+//
+//        return response()->json(['category' => $category], Response::HTTP_OK);
+//    }
     public function show(string $id)
     {
-        $category = DB::table('categories')->where('id', $id)->first();
+        $category = Category::find($id);
 
         if (!$category) {
             return response()->json(['message' => 'Category not found'], Response::HTTP_NOT_FOUND);
@@ -41,31 +73,63 @@ class CategoryController extends Controller
         return response()->json(['category' => $category], Response::HTTP_OK);
     }
 
+//    public function update(Request $request, string $id)
+//    {
+//        $data = $request->validate([
+//            'name' => 'required|string|max:128',
+//        ]);
+//
+//        $updated = DB::table('categories')->where('id', $id)->update([
+//            'name'       => $data['name'],
+//            'updated_at' => now(),
+//        ]);
+//
+//        if (!$updated) {
+//            return response()->json(['message' => 'Category not found'], Response::HTTP_NOT_FOUND);
+//        }
+//
+//        return response()->json(['message' => 'Category updated'], Response::HTTP_OK);
+//    }
     public function update(Request $request, string $id)
     {
+        $category = Category::find($id);
+
+        if (!$category) {
+            return response()->json(['message' => 'Category not found'], Response::HTTP_NOT_FOUND);
+        }
+
         $data = $request->validate([
             'name' => 'required|string|max:128',
+            'color' => 'nullable|string|max:16',
         ]);
 
-        $updated = DB::table('categories')->where('id', $id)->update([
-            'name'       => $data['name'],
-            'updated_at' => now(),
-        ]);
+        $category->update($data);
 
-        if (!$updated) {
-            return response()->json(['message' => 'Category not found'], Response::HTTP_NOT_FOUND);
-        }
-
-        return response()->json(['message' => 'Category updated'], Response::HTTP_OK);
+        return response()->json([
+            'message' => 'Category updated',
+            'category' => $category
+        ], Response::HTTP_OK);
     }
 
+//    public function destroy(string $id)
+//    {
+//        $deleted = DB::table('categories')->where('id', $id)->delete();
+//
+//        if (!$deleted) {
+//            return response()->json(['message' => 'Category not found'], Response::HTTP_NOT_FOUND);
+//        }
+//
+//        return response()->json(['message' => 'Category deleted'], Response::HTTP_OK);
+//    }
     public function destroy(string $id)
     {
-        $deleted = DB::table('categories')->where('id', $id)->delete();
+        $category = Category::find($id);
 
-        if (!$deleted) {
+        if (!$category) {
             return response()->json(['message' => 'Category not found'], Response::HTTP_NOT_FOUND);
         }
+
+        $category->delete();
 
         return response()->json(['message' => 'Category deleted'], Response::HTTP_OK);
     }
